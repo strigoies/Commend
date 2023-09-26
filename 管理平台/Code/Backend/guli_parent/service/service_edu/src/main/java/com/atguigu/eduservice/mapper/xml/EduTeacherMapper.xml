@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.eduservice.mapper.EduTeacherMapper">
+    <!--查询某一天注册人数-->
+    <select id="countRegisterDay" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM edu_teacher uc
+        WHERE DATE(uc.gmt_create)=#{day}
+    </select>
+
+    <select id="CountProvince" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM edu_teacher uc
+        WHERE uc.be_injured=#{province}
+    </select>
+
+    <select id="CountShandongProvince" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM edu_teacher uc
+        WHERE uc.be_injured=#{province} AND uc.province="山东"
+    </select>
+
+    <select id="CountEveryProvince" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM edu_teacher uc
+        WHERE uc.be_injured=#{injury} AND uc.province=#{province}
+    </select>
+
+<select id="EveryProvinceInjury" resultType="com.atguigu.eduservice.entity.vo.CountProvince">
+    SELECT province as name, COUNT(*) AS value FROM edu_teacher WHERE be_injured=1 and is_deleted=0 group BY province;
+</select>
+    <select id="EveryAvatarInjury" resultType="com.atguigu.eduservice.entity.vo.CountAvatar">
+        select avatar as name,count(*) value FROM edu_teacher WHERE  be_injured=1 and is_deleted=0 group BY avatar order by value asc limit 8,12;
+    </select>
+    <select id="EveryGenderInjury" resultType="com.atguigu.eduservice.entity.vo.CountGender">
+    select gender as name,COUNT(*) AS value from edu_teacher WHERE be_injured=1 and is_deleted=0 group by gender;
+    </select>
+    <select id="EveryLevelInjury" resultType="com.atguigu.eduservice.entity.vo.CountLevel">
+        select level name,COUNT(*) AS value from edu_teacher WHERE be_injured=1 and is_deleted=0 group by level;
+    </select>
+<select id="EveryCareerInjury" resultType="com.atguigu.eduservice.entity.vo.CountCareer">
+select career name,COUNT(*) AS value from edu_teacher WHERE be_injured=1 and is_deleted=0 group by career;
+</select>
+    <select id="EveryInjury" resultType="com.atguigu.eduservice.entity.vo.CountInjury">
+        select injury name,COUNT(*) AS value from edu_teacher WHERE be_injured=1 and is_deleted=0 group by injury;
+    </select>
+    <select id="EveryBeInjury" resultType="com.atguigu.eduservice.entity.vo.CountBeInjury">
+        select be_injured as name,COUNT(*) AS value from edu_teacher where is_deleted=0  group by be_injured;
+    </select>
+    <select id="EveryAgeInjury" resultType="com.atguigu.eduservice.entity.vo.CountAgeInjury">
+        select b.age1 as name,count(*) AS value from (select  a.age,CASE
+        WHEN a.age between 0 and 20 THEN
+        '0-20'
+        WHEN a.age between 20 and 40 THEN
+        '20-40'
+        WHEN a.age between 40 and 60 THEN
+        '40-60'
+        WHEN a.age between 60 and 75 THEN
+        '60-75'
+        END as age1 from edu_teacher a where a.be_injured=1 and a.is_deleted=0) b GROUP BY b.age1;
+    </select>
+    <select id="EveryInsurance" resultType="com.atguigu.eduservice.entity.vo.CountInsurance">
+        select insurance name,count(*) value FROM edu_teacher WHERE  is_deleted=0 group BY insurance;
+    </select>
+    <select id="EveryAvatarBuyInsurance" resultType="com.atguigu.eduservice.entity.vo.CountAvatarBuyInsurance">
+        select avatar name,count(*) value FROM edu_teacher WHERE  is_deleted=0 group BY avatar;
+    </select>
+    <select id="EveryMonthInjury" resultType="com.atguigu.eduservice.entity.vo.CountMonth">
+        select month(gmt_modified) name,round((count(*))/2) value from edu_teacher WHERE  be_injured=1 and is_deleted=0 GROUP BY month(gmt_modified);
+    </select>
+
+    <select id="EveryMonthBuyInsurance" resultType="com.atguigu.eduservice.entity.vo.CountMonth">
+        select month(gmt_modified) name,round((count(*))/2) value from edu_teacher WHERE  is_deleted=0 GROUP BY month(gmt_modified);
+    </select>
+
+    <select id="EveryInjuryInsurance" resultType="com.atguigu.eduservice.entity.vo.CountInsurance">
+        select insurance name,count(*) value FROM edu_teacher WHERE  be_injured=1 and is_deleted=0 group BY insurance;
+    </select>
+    <select id="EveryAvatarInjuryAll" resultType="com.atguigu.eduservice.entity.vo.CountAvatar">
+        select avatar as name,count(*) value FROM edu_teacher WHERE  be_injured=1 and is_deleted=0 group BY avatar ;
+    </select>
+    <select id="EveryInsurancePlan" resultType="com.atguigu.eduservice.entity.vo.CountInsurancePlan">
+        select insurance_plan plan,count(*) value,insurance from edu_teacher  WHERE  is_deleted=0 group by insurance,insurance_plan;
+    </select>
+
+    <select id="EveryInsuranceBeInjury" resultType="com.atguigu.eduservice.entity.vo.CountInsurancePlan">
+        select be_injured plan,count(*) value,insurance from edu_teacher  WHERE  is_deleted=0 group by insurance,be_injured;
+    </select>
+    <select id="EveryUserAge" resultType="com.atguigu.eduservice.entity.vo.CountAvatar">
+        <!--select b.age1 as name,count(*) AS value from (select  a.age,CASE-->
+        <!--WHEN a.age between 0 and 20 THEN-->
+        <!--'0-20'-->
+        <!--WHEN a.age between 20 and 40 THEN-->
+        <!--'20-40'-->
+        <!--WHEN a.age between 40 and 60 THEN-->
+        <!--'40-60'-->
+        <!--WHEN a.age between 60 and 75 THEN-->
+        <!--'60-75'-->
+        <!--END as age1 from edu_teacher a where  insurance=#{insurance} and a.is_deleted=0) b GROUP BY b.age1;-->
+        {call EveryUserAge(#{insurance,mode=IN})}
+    </select>
+
+    <select id="EveryUserGender" resultType="com.atguigu.eduservice.entity.vo.CountAvatar">
+        <!--select gender name ,count(*) value  from edu_teacher where insurance=#{insurance} and is_deleted=0 GROUP BY gender;-->
+        {call EveryUserGender(#{insurance,mode=IN})}
+    </select>
+
+    <select id="EveryUserAvatar" resultType="com.atguigu.eduservice.entity.vo.CountAvatar">
+        <!--select avatar as name,count(*) value FROM edu_teacher WHERE  insurance=#{insurance} and is_deleted=0 group BY avatar;-->
+        {call EveryUserAvatar(#{insurance,mode=IN})}
+    </select>
+
+    <select id="EveryUserInjury" resultType="com.atguigu.eduservice.entity.vo.CountAvatar" statementType="CALLABLE">
+        <!--select injury name,COUNT(*) AS value from edu_teacher WHERE insurance=#{insurance} and is_deleted=0 group by injury;-->
+        {call EveryUserInjury(#{insurance,mode=IN})}
+    </select>
+    <select id="UserCommend" resultType="com.atguigu.eduservice.entity.vo.CountAvatar" statementType="CALLABLE">
+        <!--select injury name,COUNT(*) AS value from edu_teacher WHERE insurance=#{insurance} and is_deleted=0 group by injury;-->
+        {call UserCommend(#{gender,mode=IN},#{avatar,mode=IN},#{province,mode=IN},#{sta,mode=IN})}
+    </select>
+    <select id="MadeChart" resultType="com.atguigu.eduservice.entity.vo.CountAvatar" >
+        select ${category} name ,count(*) value from edu_teacher  where  is_deleted=0 and (level=#{level} or #{level}="null") and (gender=#{gender} or #{gender}="null") and (avatar=#{avatar} or #{avatar}="null") and (be_injured=#{be_injured} or #{be_injured}="null") and (injury=#{injury} or #{injury}="null") and (province=#{province} or #{province}="null") and (insurance=#{insurance} or #{insurance}="null") and (injured_scene=#{injured_scene} or #{injured_scene}="null") group BY ${category};
+    </select>
+</mapper>

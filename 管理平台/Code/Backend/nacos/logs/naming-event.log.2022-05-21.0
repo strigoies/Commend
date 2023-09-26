@@ -1,0 +1,250 @@
+2022-05-21 08:27:31,538 INFO service: DEFAULT_GROUP@@service-ucenter {POS} {IP-ENABLED} valid: 192.168.186.228:8006@DEFAULT, region: unknown, msg: client beat ok
+
+2022-05-21 08:27:33,443 INFO {POS} {IP-DISABLED} valid: 192.168.186.228:8006@DEFAULT@DEFAULT_GROUP@@service-ucenter, region: unknown, msg: client timeout after 15000, last beat: 1653092851538
+
+2022-05-21 08:27:33,542 INFO {POS} {IP-DISABLED} valid: 192.168.186.228:8002@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1653057190249
+
+2022-05-21 08:27:35,193 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 192.168.186.228:8002@DEFAULT, region: unknown, msg: client beat ok
+
+2022-05-21 08:27:35,577 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.186.228:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-05-21 08:27:35,578 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-05-21 08:27:36,542 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.186.228:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-05-21 08:27:36,542 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.186.228:8002_true,
+
+2022-05-21 08:41:44,005 INFO {POS} {IP-DISABLED} valid: 192.168.186.228:8006@DEFAULT@DEFAULT_GROUP@@service-ucenter, region: unknown, msg: client timeout after 15000, last beat: 1653093686908
+
+2022-05-21 08:41:59,023 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.186.228:8006:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-05-21 08:41:59,023 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 
+
+2022-05-21 08:42:16,089 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.40.228:8006:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-05-21 08:42:16,089 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 192.168.40.228:8006_true,
+
+2022-05-21 08:50:19,090 INFO {POS} {IP-DISABLED} valid: 192.168.40.228:8006@DEFAULT@DEFAULT_GROUP@@service-ucenter, region: unknown, msg: client timeout after 15000, last beat: 1653094199822
+
+2022-05-21 08:50:34,108 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.40.228:8006:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-05-21 08:50:34,108 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 
+
+2022-05-21 09:36:43,644 INFO DEFAULT_GROUP@@service-msm {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.40.228:8005:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-05-21 09:36:43,644 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-msm, ips: 192.168.40.228:8005_true,
+
+2022-05-21 09:45:13,683 INFO {POS} {IP-DISABLED} valid: 192.168.40.228:8005@DEFAULT@DEFAULT_GROUP@@service-msm, region: unknown, msg: client timeout after 15000, last beat: 1653097497723
+
+2022-05-21 09:45:25,118 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-msm, ips: 192.168.40.228:8005_false,
+
+2022-05-21 09:45:29,098 INFO service: DEFAULT_GROUP@@service-msm {POS} {IP-ENABLED} valid: 192.168.40.228:8005@DEFAULT, region: unknown, msg: client beat ok
+
+2022-05-21 10:14:08,955 INFO {POS} {IP-DISABLED} valid: 192.168.40.228:8005@DEFAULT@DEFAULT_GROUP@@service-msm, region: unknown, msg: client timeout after 15000, last beat: 1653099229752
+
+2022-05-21 10:14:19,661 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-msm, ips: 192.168.40.228:8005_false,
+
+2022-05-21 10:14:23,317 INFO service: DEFAULT_GROUP@@service-msm {POS} {IP-ENABLED} valid: 192.168.40.228:8005@DEFAULT, region: unknown, msg: client beat ok
+
+2022-05-21 10:23:04,009 INFO {POS} {IP-DISABLED} valid: 192.168.40.228:8005@DEFAULT@DEFAULT_GROUP@@service-msm, region: unknown, msg: client timeout after 15000, last beat: 1653099768466
+
+2022-05-21 10:23:19,022 INFO DEFAULT_GROUP@@service-msm {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.40.228:8005:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-05-21 10:23:19,022 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-msm, ips: 
+
+2022-05-21 10:23:22,837 INFO DEFAULT_GROUP@@service-msm {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.40.228:8005:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-05-21 10:23:22,837 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-msm, ips: 192.168.40.228:8005_true,
+
+2022-05-21 11:00:14,405 INFO {POS} {IP-DISABLED} valid: 192.168.40.228:8005@DEFAULT@DEFAULT_GROUP@@service-msm, region: unknown, msg: client timeout after 15000, last beat: 1653101995176
+
+2022-05-21 11:00:29,419 INFO DEFAULT_GROUP@@service-msm {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.40.228:8005:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-05-21 11:00:29,419 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-msm, ips: 
+
+2022-05-21 11:03:12,337 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.40.228:8006:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-05-21 11:03:12,337 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 192.168.40.228:8006_true,
+
+2022-05-21 11:23:15,600 INFO {POS} {IP-DISABLED} valid: 192.168.40.228:8006@DEFAULT@DEFAULT_GROUP@@service-ucenter, region: unknown, msg: client timeout after 15000, last beat: 1653103376412
+
+2022-05-21 11:23:25,262 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 192.168.40.228:8006_false,
+
+2022-05-21 11:23:29,253 INFO service: DEFAULT_GROUP@@service-ucenter {POS} {IP-ENABLED} valid: 192.168.40.228:8006@DEFAULT, region: unknown, msg: client beat ok
+
+2022-05-21 11:43:00,790 INFO {POS} {IP-DISABLED} valid: 192.168.40.228:8006@DEFAULT@DEFAULT_GROUP@@service-ucenter, region: unknown, msg: client timeout after 15000, last beat: 1653104564503
+
+2022-05-21 11:43:09,606 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 192.168.40.228:8006_false,
+
+2022-05-21 11:43:11,861 INFO service: DEFAULT_GROUP@@service-ucenter {POS} {IP-ENABLED} valid: 192.168.40.228:8006@DEFAULT, region: unknown, msg: client beat ok
+
+2022-05-21 11:46:40,850 INFO {POS} {IP-DISABLED} valid: 192.168.40.228:8006@DEFAULT@DEFAULT_GROUP@@service-ucenter, region: unknown, msg: client timeout after 15000, last beat: 1653104781883
+
+2022-05-21 11:46:52,203 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 192.168.40.228:8006_false,
+
+2022-05-21 11:46:54,319 INFO service: DEFAULT_GROUP@@service-ucenter {POS} {IP-ENABLED} valid: 192.168.40.228:8006@DEFAULT, region: unknown, msg: client beat ok
+
+2022-05-21 11:59:20,973 INFO {POS} {IP-DISABLED} valid: 192.168.40.228:8006@DEFAULT@DEFAULT_GROUP@@service-ucenter, region: unknown, msg: client timeout after 15000, last beat: 1653105544436
+
+2022-05-21 11:59:36,104 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.40.228:8006:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-05-21 11:59:36,104 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 
+
+2022-05-21 11:59:37,770 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.40.228:8006:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-05-21 11:59:37,770 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 192.168.40.228:8006_true,
+
+2022-05-21 12:03:56,079 INFO {POS} {IP-DISABLED} valid: 192.168.40.228:8006@DEFAULT@DEFAULT_GROUP@@service-ucenter, region: unknown, msg: client timeout after 15000, last beat: 1653105816605
+
+2022-05-21 12:04:11,092 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.40.228:8006:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-05-21 12:04:11,093 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 
+
+2022-05-21 12:04:53,557 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.40.228:8006:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-05-21 12:04:53,557 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 192.168.40.228:8006_true,
+
+2022-05-21 12:10:56,128 INFO {POS} {IP-DISABLED} valid: 192.168.40.228:8006@DEFAULT@DEFAULT_GROUP@@service-ucenter, region: unknown, msg: client timeout after 15000, last beat: 1653106240856
+
+2022-05-21 12:11:11,137 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.40.228:8006:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-05-21 12:11:11,137 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 
+
+2022-05-21 12:11:13,619 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.19.81.151:8006:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-05-21 12:11:13,619 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 10.19.81.151:8006_true,
+
+2022-05-21 14:34:36,518 INFO {POS} {IP-DISABLED} valid: 192.168.186.228:8002@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1653106754767
+
+2022-05-21 14:34:36,519 INFO {POS} {IP-DISABLED} valid: 10.19.81.151:8006@DEFAULT@DEFAULT_GROUP@@service-ucenter, region: unknown, msg: client timeout after 15000, last beat: 1653106752819
+
+2022-05-21 14:34:38,975 INFO service: DEFAULT_GROUP@@service-ucenter {POS} {IP-ENABLED} valid: 10.19.81.151:8006@DEFAULT, region: unknown, msg: client beat ok
+
+2022-05-21 14:34:38,976 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 192.168.186.228:8002@DEFAULT, region: unknown, msg: client beat ok
+
+2022-05-21 14:34:39,390 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.19.81.151:8006:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-05-21 14:34:39,390 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 
+
+2022-05-21 14:34:39,496 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.186.228:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-05-21 14:34:39,496 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-05-21 14:34:41,527 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.19.81.151:8006:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-05-21 14:34:41,527 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 10.19.81.151:8006_true,
+
+2022-05-21 14:34:41,577 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.186.228:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-05-21 14:34:41,577 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.186.228:8002_true,
+
+2022-05-21 14:42:14,350 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.26.228:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-05-21 14:42:14,350 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.26.228:8002_true,192.168.186.228:8002_true,
+
+2022-05-21 14:42:21,541 INFO {POS} {IP-DISABLED} valid: 192.168.186.228:8002@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1653115321618
+
+2022-05-21 14:42:36,585 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.186.228:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-05-21 14:42:36,585 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.26.228:8002_true,
+
+2022-05-21 16:57:14,516 INFO {POS} {IP-DISABLED} valid: 192.168.26.228:8002@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1653119258578
+
+2022-05-21 16:57:14,517 INFO {POS} {IP-DISABLED} valid: 10.19.81.151:8006@DEFAULT@DEFAULT_GROUP@@service-ucenter, region: unknown, msg: client timeout after 15000, last beat: 1653119257893
+
+2022-05-21 16:57:17,095 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 192.168.26.228:8002@DEFAULT, region: unknown, msg: client beat ok
+
+2022-05-21 16:57:17,304 INFO service: DEFAULT_GROUP@@service-ucenter {POS} {IP-ENABLED} valid: 10.19.81.151:8006@DEFAULT, region: unknown, msg: client beat ok
+
+2022-05-21 16:57:18,057 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.19.81.151:8006:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-05-21 16:57:18,057 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 
+
+2022-05-21 16:57:18,057 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.26.228:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-05-21 16:57:18,057 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-05-21 16:57:19,520 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.26.228:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-05-21 16:57:19,520 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.26.228:8002_true,
+
+2022-05-21 16:57:19,524 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.19.81.151:8006:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-05-21 16:57:19,524 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 10.19.81.151:8006_true,
+
+2022-05-21 17:09:52,579 INFO {POS} {IP-DISABLED} valid: 192.168.26.228:8002@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1653124174861
+
+2022-05-21 17:10:07,597 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.26.228:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-05-21 17:10:07,597 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-05-21 17:37:00,264 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.234.228:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-05-21 17:37:00,264 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.234.228:8002_true,
+
+2022-05-21 18:47:28,691 INFO {POS} {IP-DISABLED} valid: 10.19.81.151:8006@DEFAULT@DEFAULT_GROUP@@service-ucenter, region: unknown, msg: client timeout after 15000, last beat: 1653130030836
+
+2022-05-21 18:47:43,702 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.19.81.151:8006:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-05-21 18:47:43,702 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 
+
+2022-05-21 18:47:53,589 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.234.228:8006:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-05-21 18:47:53,589 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 192.168.234.228:8006_true,
+
+2022-05-21 18:49:08,464 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 192.168.234.228:8006_true,
+
+2022-05-21 18:49:28,719 INFO {POS} {IP-DISABLED} valid: 192.168.234.228:8006@DEFAULT@DEFAULT_GROUP@@service-ucenter, region: unknown, msg: client timeout after 15000, last beat: 1653130151044
+
+2022-05-21 18:49:43,731 INFO DEFAULT_GROUP@@service-ucenter {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.234.228:8006:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-05-21 18:49:43,732 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-ucenter, ips: 
+
+2022-05-21 18:53:28,717 INFO {POS} {IP-DISABLED} valid: 192.168.234.228:8002@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1653130389603
+
+2022-05-21 18:53:38,291 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.234.228:8002_false,
+
+2022-05-21 18:53:41,869 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 192.168.234.228:8002@DEFAULT, region: unknown, msg: client beat ok
+
+2022-05-21 19:06:23,768 INFO {POS} {IP-DISABLED} valid: 192.168.234.228:8002@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1653131166929
+
+2022-05-21 19:06:38,778 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.234.228:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-05-21 19:06:38,838 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-05-21 19:06:40,552 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.234.228:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-05-21 19:06:40,552 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.234.228:8002_true,
+
+2022-05-21 19:10:03,792 INFO {POS} {IP-DISABLED} valid: 192.168.234.228:8002@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1653131384102
+
+2022-05-21 19:10:10,336 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.234.228:8002_false,
+
+2022-05-21 19:10:14,011 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 192.168.234.228:8002@DEFAULT, region: unknown, msg: client beat ok
+
+2022-05-21 19:17:18,820 INFO {POS} {IP-DISABLED} valid: 192.168.234.228:8002@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1653131819073
+
+2022-05-21 19:17:30,682 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.234.228:8002_false,
+
+2022-05-21 19:17:34,338 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 192.168.234.228:8002@DEFAULT, region: unknown, msg: client beat ok
+
+2022-05-21 20:48:04,567 INFO {POS} {IP-DISABLED} valid: 192.168.234.228:8002@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1653137265043
+
+2022-05-21 20:48:19,580 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.234.228:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-05-21 20:48:19,580 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-05-21 20:48:24,952 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.234.228:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-05-21 20:48:24,953 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.234.228:8002_true,
+
+2022-05-21 22:23:20,154 INFO {POS} {IP-DISABLED} valid: 192.168.234.228:8002@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1653142984392
+
+2022-05-21 22:23:35,163 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.234.228:8002:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-05-21 22:23:35,163 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-05-21 22:23:44,027 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.234.228:8002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-05-21 22:23:44,027 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.234.228:8002_true,
+
